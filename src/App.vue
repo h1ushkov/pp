@@ -41,7 +41,7 @@
         <div class="flex flex-col">
 
           <div
-              class="transition-all flex flex-col ml-0 mt-10 lg:ml-10 lg:mt-0 backdrop-blur-md hover:backdrop-blur-xl bg-white/50 lg:text-white lg:bg-black/0 hover:bg-white/50 text-black rounded-none hover:text-black p-10 lg:rounded-t-xl border-2 border-b-0 max-w-[700px] max-h-[300px] overflow-y-auto">
+              class="transition-all flex flex-col ml-0 mt-10 lg:ml-10 lg:mt-0 backdrop-blur-md hover:backdrop-blur-xl bg-white/50 lg:text-white lg:bg-transparent hover:bg-white/50 text-black rounded-none hover:text-black p-10 lg:rounded-t-xl lg:border-white border-transparent border-2 border-b-0 max-w-[700px] max-h-[300px] overflow-y-auto">
 
             <h3 class="font-black mb-4 text-3xl flex align-center justify-center">📰Articles</h3>
             <div  class="flex flex-col items-start justify-between">
@@ -61,15 +61,15 @@
           </div>
 
           <div
-              class="transition-all flex flex-col ml-0 lg:ml-10  backdrop-blur-md hover:backdrop-blur-xl  bg-amber-400/30 lg:bg-black/0 hover:bg-amber-400/30 p-10 lg:rounded-b-xl border-2 border-t-1 max-w-[700px] rounded-none max-h-[300px] overflow-y-auto">
+              class="transition-all flex flex-col ml-0 lg:ml-10  backdrop-blur-md hover:backdrop-blur-xl  bg-yellow-400/30 lg:bg-transparent hover:bg-yellow-400/30 p-10 lg:rounded-b-xl border-2 border-t-1 max-w-[700px] lg:border-white border-transparent rounded-none max-h-[300px] overflow-y-auto">
             <h3 class="font-black mb-4 text-3xl text-white flex align-center justify-center">📂Projects</h3>
-              <ul  class="list-decimal">
-                <li v-for="project in projects" :key="project.id" class="font-bold hover:underline text-white">
-                    <button class="hover:underline" @click="selectProject(project)"> {{ project.title }}</button>
-                </li>
+            <ul  class="list-decimal">
+              <li v-for="project in projects" :key="project.id" class="font-bold hover:underline text-white">
+                <button class="hover:underline" @click="selectProject(project)"> {{ project.title }}</button>
+              </li>
 
 
-              </ul>
+            </ul>
           </div>
         </div>
 
@@ -136,9 +136,9 @@
         </div>
         <div v-if="!isFullScreen" >
           <h1 class="font-bold mt-4">Short description:</h1>
-        <div class="mt-4" v-html="selectedProject.excerpt">
+          <div class="mt-4" v-html="selectedProject.excerpt">
 
-        </div>
+          </div>
         </div>
         <div v-if="!isFullScreen" class="mt-4">
           <button class="flex flex-col justify-items-end items-end mr-2 hover:underline" @click="toggleFullScreen">Learn more</button>
