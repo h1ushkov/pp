@@ -9,7 +9,7 @@
 
       <div class="flex flex-col lg:flex-row justify-center items-center bg-repeat w-full h-full absolute z-50 overflow-y-auto"
            style="background-image: url('/pa6.png')">
-        <div class="flex flex-col backdrop-blur-md p-10 mt-72 lg:mt-0 rounded-xl border-2 items-center max-w-[400px] max-h-[390px]">
+        <div class="flex flex-col backdrop-blur-md p-10 mt-[100vh] lg:mt-0 rounded-xl border-2 items-center min-w-[270px] max-w-[400px] max-h-[390px]">
           <div>
             <a :href="'https://github.com/' + userData.login"> <img
                 :src="userData.avatarUrl" alt="GitHub Avatar"
