@@ -46,10 +46,8 @@
             <h3 class="font-black mb-4 text-3xl flex align-center justify-center">📰Articles</h3>
             <div  class="flex flex-col items-start justify-between">
               <ul v-for="post in posts" :key="post.id" class="list-none">
-                <li  class="text-1xl font-bold hover:underline flex">
-
-                  <button class="hover:underline" @click="selectPost(post)">{{ post.title }}</button>
-
+                <li class="text-1xl font-bold hover:underline flex">
+                  <button class="hover:underline" @click="selectPost(post)">{{ post.title }}  </button>
                 </li>
 
                 <li class="text-1xl font-normal mb-4 flex mt-0.5">
@@ -59,7 +57,18 @@
               </ul>
             </div>
           </div>
+          <div
+              class="transition-all flex flex-col ml-0 lg:ml-10 lg:mt-0 backdrop-blur-md hover:backdrop-blur-xl bg-gray-500/50 lg:text-white lg:bg-transparent hover:bg-gray-500/50 text-white rounded-none hover:text-white p-10 lg:border-white border-transparent border-2 border-b-0 max-w-[700px] max-h-[300px] overflow-y-auto">
 
+            <h3 class="font-black mb-4 text-3xl flex align-center justify-center">⚙️Tech and skills stack</h3>
+            <div  class="flex flex-col items-start justify-between">
+              <div>Frontend: HTML + CSS + JS / Vue.js / React.js / React Native / Three.js</div>
+              <div>Backend: Express.js / Nest.js / Java SpringBoot</div>
+              <div>Cross platform: Kotlin Android Development</div>
+              <div>Containers & Microservices: Docker / Kubertenes</div>
+              <div>Design: Figma / Adobe Illustrator / Adobe Photoshop / Blender</div>
+            </div>
+          </div>
           <div
               class="transition-all flex flex-col ml-0 lg:ml-10  backdrop-blur-md hover:backdrop-blur-xl  bg-yellow-400/30 lg:bg-transparent hover:bg-yellow-400/30 p-10 lg:rounded-b-xl border-2 border-t-1 max-w-[700px] lg:border-white border-transparent rounded-none max-h-[300px] overflow-y-auto">
             <h3 class="font-black mb-4 text-3xl text-white flex align-center justify-center">📂Projects</h3>
