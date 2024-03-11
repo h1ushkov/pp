@@ -58,7 +58,7 @@
             </div>
           </div>
           <div
-              class="transition-all flex flex-col ml-0 lg:ml-10 lg:mt-0 backdrop-blur-md hover:backdrop-blur-xl bg-gray-500/50 lg:text-white lg:bg-transparent hover:bg-gray-500/50 text-white rounded-none hover:text-white p-10 lg:border-white border-transparent border-2 border-b-0 max-w-[700px] max-h-[300px] overflow-y-auto">
+              class="transition-all flex flex-col ml-0 lg:ml-10 lg:mt-0 backdrop-blur-md hover:backdrop-blur-xl bg-gray-500/50 lg:text-white lg:bg-transparent hover:bg-gray-500/50 text-white rounded-none hover:text-white p-10 lg:border-white border-transparent border-2 border-b-0 max-w-[700px] h-auto lg:max-h-[300px] overflow-y-auto">
 
             <h3 class="font-black mb-4 text-3xl flex align-center justify-center">⚙️Tech and skills stack</h3>
             <div  class="flex flex-col items-start justify-between">
